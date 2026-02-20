@@ -39,7 +39,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add README.md
           if ! git diff --staged --quiet; then
-            git commit -m "docs: Update README from data.json [skip ci]"
+            git commit -m "docs: Update README from data.json"
             git push
           else
             echo "No changes to commit"
