@@ -92,10 +92,18 @@
         "deadline": "TBD (Spring 2026)"
       },
       {
-        "name": "42 Abu Dhabi",
+        "name": "42 Abu Dhabi Bootcamp",
         "url": "https://42abudhabi.ae/",
         "field": "Computer Science",
         "location": "Abu Dhabi",
+        "ageCategory": "NA",
+        "deadline": "Rolling"
+      },
+      {
+        "name": "Gigs - Home from College",
+        "url": "https://www.homefromcollege.com/gigs",
+        "field": "Marketing/Product/Others",
+        "location": "Remote/Global",
         "ageCategory": "NA",
         "deadline": "Rolling"
       }
@@ -105,6 +113,11 @@
         "name": "AWS Cloud Practitioner Essentials",
         "url": "https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/",
         "field": "Cloud Computing"
+      },
+      {
+        "name": "Harvard's CS50 Python",
+        "url": "https://cs50.harvard.edu/python/",
+        "field": "Computer Science"
       }
     ],
     "Research": [
@@ -173,7 +186,12 @@
     {
       "name": "80,000 Hours Job Board",
       "url": "https://jobs.80000hours.org/?int_campaign=primary-navigation",
-      "description": ""
+      "description": "jobs with impact"
+    },
+    {
+      "name": "Girls on Campus",
+      "url": "https://www.instagram.com/girls.on.campus/",
+      "description": "posts remote/paid opportunities"
     }
   ]
 }
