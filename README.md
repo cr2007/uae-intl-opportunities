@@ -71,6 +71,7 @@ Create your own opportunities ✨</sub>
 | [ResearchGirl](https://www.researchgirl.org/independent-research) | STEM | Remote | High School & Undergraduate | NA (Runs May-Apr) |  
 | [Undergraduate Research & Innovation Competition - Abu Dhabi University](https://www.adu.ac.ae/uric) | Multiple Fields | Abu Dhabi, UAE | Undergraduate | 8 March |  
 | [MBZUAI Undergraduate Research Internship (UGRIP)](https://mbzuai.ac.ae/ugrip/) | CS / Computer Vision / ML / NLP / Robotics | Abu Dhabi, UAE | Undergraduate | 26 February |  
+| [NYUAD Summer Undergraduate Research Program](https://nyuad.nyu.edu/en/academics/undergraduate/visiting-students/visiting-undergraduate-research.html#tab-4-interdisciplinary-) | Humanities / Engineering / Science / Multiple | Abu Dhabi, UAE | Undergraduate | 27 February |  
 
 ---
 
