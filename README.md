@@ -22,13 +22,6 @@ Create your own opportunities ✨</sub>
 💎 **[Education Resources](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#education-resources)**  
 🌐 **[People/Communities/Job Boards](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#peoplecommunitiesjob-boards)**  
 
-## ❗Closing Soon  
-| Name | Description | Deadline |  
-| ------- | ------- | ------- |  
-| [MZN x HUB71 Programme](https://www.hub71.com/program/mzn-x-hub71-programme) | 3-month program for Emirati Founders | 22 Feb 2026 |  
-
----
-
 ## Volunteer  
 
 | Name | Field | Location | Age Category | Deadline |  
