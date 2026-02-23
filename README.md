@@ -26,6 +26,7 @@ Create your own opportunities ✨</sub>
 
 | Name | Field | Location | Age Category | Deadline |  
 | ------- | ------- | ------- | ------- | ------- |  
+| [Art Dubai 2026 Volunteer](https://docs.google.com/presentation/d/1u9nQXo8jfC26qjg9JRVb-gz-3nUdhv90uMKVcz7yX5c/edit?slide=id.g2e1c14f6cee_0_0#slide=id.g2e1c14f6cee_0_0) | Art / Media / Communication | Dubai | Depends on Volunteer role | NA (Event runs 15-19 April) |  
 | [DataKind](https://www.datakind.org/) | Data Science / AI for Social Good | Global (Remote + Chapters) | All | Rolling |  
 | [AI for Good – Young AI Leaders Community](https://aiforgood.itu.int/) | AI / Technology / SDGs | Global | Youth (18–30 typical) | Rolling |  
 | [PRME Students (UN)](https://www.unprme.org/prme-students/) | Sustainability / SDGs / Business | Global | University Students | Rolling |  
