@@ -112,6 +112,11 @@
         "name": "Harvard's CS50 Python",
         "url": "https://cs50.harvard.edu/python/",
         "field": "Computer Science"
+      },
+      {
+        "name": "AI Safety Courses (+ Volunteer Projects)",
+        "url": "https://www.aisafety.com/self-study",
+        "field": "AI Safety / Ethics / CS / Policy"
       }
     ],
     "Research": [
