@@ -46,14 +46,16 @@ Create your own opportunities ✨</sub>
     content += "💎 **[Education Resources](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#education-resources)**  \n"
     content += "🌐 **[People/Communities/Job Boards](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#peoplecommunitiesjob-boards)**  \n\n"
     
-    #Closing Soon section
-    content += "## ❗Closing Soon  \n"
-    content += generate_table(
-        ['Name', 'Description', 'Deadline'],
-        data['closingSoon'],
-        ['name', 'description', 'deadline']
-    )
-    content += "\n---\n\n"
+    closing_soon = data.get('closingSoon', [])
+
+    if closing_soon:
+        content += "## ❗Closing Soon  \n"
+        content += generate_table(
+            ['Name', 'Description', 'Deadline'],
+            closing_soon,
+            ['name', 'description', 'deadline']
+        )
+        content += "\n---\n\n"
     
     #Generate content for each category
     for category, opportunities in data['categories'].items():
