@@ -54,6 +54,7 @@ Create your own opportunities ✨</sub>
 | ------- | ------- |  
 | [AWS Cloud Practitioner Essentials](https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/) | Cloud Computing |  
 | [Harvard's CS50 Python](https://cs50.harvard.edu/python/) | Computer Science |  
+| [AI Safety Courses (+ Volunteer Projects)](https://www.aisafety.com/self-study) | AI Safety / Ethics / CS / Policy |  
 
 ---
 
