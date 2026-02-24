@@ -26,8 +26,8 @@ Create your own opportunities ✨</sub>
 
 ## Volunteer
 
-| Name | Field | Location | Age Category | Deadline |  
-| ------- | ------- | ------- | ------- | ------- |  
+| Name | Field | Location | Age Category | Deadline |
+| ------- | ------- | ------- | ------- | ------- |
 | [Art Dubai 2026 Volunteer](https://docs.google.com/presentation/d/1u9nQXo8jfC26qjg9JRVb-gz-3nUdhv90uMKVcz7yX5c/edit?slide=id.g2e1c14f6cee_0_0#slide=id.g2e1c14f6cee_0_0) | Art / Media / Communication | Dubai | Depends on Volunteer role | NA (Event runs 15-19 April) |  
 | [DataKind](https://www.datakind.org/) | Data Science / AI for Social Good | Global (Remote + Chapters) | All | Rolling |  
 | [AI for Good – Young AI Leaders Community](https://aiforgood.itu.int/) | AI / Technology / SDGs | Global | Youth (18–30 typical) | Rolling |  
@@ -41,8 +41,8 @@ Create your own opportunities ✨</sub>
 
 ## Jobs / Internships / Fellowships
 
-| Name | Field | Location | Age Category | Deadline |  
-| ------- | ------- | ------- | ------- | ------- |  
+| Name | Field | Location | Age Category | Deadline |
+| ------- | ------- | ------- | ------- | ------- |
 | [LunarTech Apprentice Program](https://www.lunartech.ai/our-careers) | Multiple Fields | Global | 18+ | N/A |  
 | [Brazen Academy - PR Internship](https://www.linkedin.com/posts/hibba-khan-7633b4184_brazenacademy-internship-brazenmena-activity-7427583455808540672-V0i2/) | Public Relations/Marketing | UAE | NA | NA |  
 | [Kode With Klossy](https://www.kodewithklossy.com/camp) | Computer Science | Remote/Onsite | 13-18 | TBD (Spring 2026) |  
@@ -54,8 +54,8 @@ Create your own opportunities ✨</sub>
 
 ## Certificates
 
-| Name | Field |  
-| ------- | ------- |  
+| Name | Field |
+| ------- | ------- |
 | [AI Nation - Afaaq [AWS Upskilling Program]](https://www.ea.ae/ai-nation-afaaq-program) | Cloud / AI / CS |  
 | [AWS Cloud Practitioner Essentials](https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/) | Cloud Computing |  
 | [Harvard's CS50 Python](https://cs50.harvard.edu/python/) | Computer Science |  
@@ -69,8 +69,8 @@ Create your own opportunities ✨</sub>
 
 ## Research
 
-| Name | Field | Location | Age Category | Deadline |  
-| ------- | ------- | ------- | ------- | ------- |  
+| Name | Field | Location | Age Category | Deadline |
+| ------- | ------- | ------- | ------- | ------- |
 | [ResearchGirl](https://www.researchgirl.org/independent-research) | STEM | Remote | High School & Undergraduate | NA (Runs May-Apr) |  
 | [Undergraduate Research & Innovation Competition - Abu Dhabi University](https://www.adu.ac.ae/uric) | Multiple Fields | Abu Dhabi, UAE | Undergraduate | 8 March |  
 | [MBZUAI Undergraduate Research Internship (UGRIP)](https://mbzuai.ac.ae/ugrip/) | CS / Computer Vision / ML / NLP / Robotics | Abu Dhabi, UAE | Undergraduate | 26 February |  
@@ -80,8 +80,8 @@ Create your own opportunities ✨</sub>
 
 ## Competitions
 
-| Name | Field | Location | Age Category | Deadline |  
-| ------- | ------- | ------- | ------- | ------- |  
+| Name | Field | Location | Age Category | Deadline |
+| ------- | ------- | ------- | ------- | ------- |
 | [FemTech Hackathon](https://schools.expocitydubai.com/en/femtech-hackathon-2026/#msdynmkt_trackingcontext=0544e260-0bab-4e44-83eb-fe2dec920100) | Science/Health/Innovation | Dubai, UAE | 16-18 | 6 March |  
 | [MBRSIC CleanTech Hackathon](https://www.mbrsic.ae/en/join-us/cleantech-hackathon-2026) | Sustainability/Energy/AI | UAE | All | 17 March |  
 | [LabLab.ai Hackathons](https://lablab.ai/) | Computer Science/AI/Business | UAE/Virtual | NA | Rolling |  

@@ -1,11 +1,45 @@
 #!/usr/bin/env python3
 import json
-import os
-from datetime import datetime
+from typing import TypedDict, Optional, Dict, List
+
+class Opportunity(TypedDict, total=False):
+    name:        str
+    url:         str
+    field:       str
+    location:    str
+    ageCategory: str
+    deadline:    str
+
+
+class Certificate(TypedDict):
+    name:  str
+    url:   str
+    field: str
+
+
+class EducationResource(TypedDict):
+    name:        str
+    url:         str
+    description: str
+
+
+class PeopleCommunity(TypedDict):
+    name:        str
+    url:         str
+    description: str
+
+
+class OpportunitiesSchema(TypedDict):
+    closingSoon:        List[Opportunity]
+    categories:         Dict[str, List[Opportunity]]
+    certificates:       List[Certificate]
+    educationResources: List[EducationResource]
+    peopleCommunities:  List[PeopleCommunity]
+
 
 def main():
     with open('data.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
+        data: OpportunitiesSchema = json.load(f)
 
     with open('README_template.md', 'r', encoding='utf-8') as f:
         template = f.read()
@@ -89,30 +123,30 @@ def generate_tables_section(data):
 
     return content
 
-def generate_table(headers, items, fields):
+def generate_table(headers: list[str], items: list[Opportunity], fields: list[str]) -> str:
     """Generate a markdown table with given headers and items"""
     if not items:
         return ""
-    
+
     #Table header
-    table = "| " + " | ".join(headers) + " |  \n"
-    table += "| " + " | ".join(["-------"] * len(headers)) + " |  \n"
-    
+    table = "| " + " | ".join(headers) + " |\n"
+    table += "| " + " | ".join(["-------"] * len(headers)) + " |\n"
+
     #Table rows
     for item in items:
         row = []
         for field_index, field in enumerate(fields):
             value = str(item.get(field, "")).replace("|", "\\|")
-            
+
             #Create hyperlink for name field
             if field_index == 0:
                 url = item.get('url', '')
                 if url and url != 'NA':
                     value = f"[{value}]({url})"
-            
+
             row.append(value)
         table += "| " + " | ".join(row) + " |  \n"
-    
+
     return table
 
 if __name__ == "__main__":
