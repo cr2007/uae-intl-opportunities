@@ -1,0 +1,36 @@
+remote_theme: abhinavs/moonwalk
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  appearance_toggle: true # if appearance can be switched by user
+  show_navbar: false
+  show_footer: false
+
+# Site settings
+title: UAE Int'l Opportunities
+repository: SaadiyahCodes/uae-intl-opportunities
+description: >-
+  A comprehensive list of opportunities for students/professionals in UAE as well as global/international programs. Includes fellowships, research and more!
+
+markdown: GFM 
+plugins:
+- jekyll-gfm-admonitions
+- jekyll-optional-front-matter
+
+exclude: 
+  - "**/*.ts" # Exclude source code files!
+  - "**/*.js"
+  - "*.ts" # Also those in the root directory!
+  - "*.js"
+  - "*.json" # Don't forget about assets!
+  - node_modules/ # And large vendored directories
+  # And these ignore all the artifacts the build produces:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
