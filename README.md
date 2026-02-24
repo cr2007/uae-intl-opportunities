@@ -8,21 +8,23 @@ Create your own opportunities ✨</sub>
 
 <sub>**Note:❗Always verify if there are any fees to enroll/participate**</sub>
 
-
 ---
-
 
 ### Browse Opportunities by Category
 
-🤝 **[Volunteer](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#volunteer)**  
-💼 **[Jobs / Internships / Fellowships](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#jobs--internships--fellowships)**  
-🎓 **[Certificates](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#certificates)**  
-🔎 **[Research](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#research)**  
-🧩 **[Competitions](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#competitions)**  
-💎 **[Education Resources](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#education-resources)**  
-🌐 **[People/Communities/Job Boards](https://github.com/SaadiyahCodes/uae-intl-opportunities?tab=readme-ov-file#peoplecommunitiesjob-boards)**  
+🤝 **[Volunteer](#volunteer)**  
+💼 **[Jobs / Internships / Fellowships](#jobs--internships--fellowships)**  
+🎓 **[Certificates](#certificates)**  
+🔎 **[Research](#research)**  
+🧩 **[Competitions](#competitions)**  
+💎 **[Education Resources](#education-resources)**  
+🌐 **[People/Communities/Job Boards](#peoplecommunitiesjob-boards)**  
 
-## Volunteer  
+---
+
+<!-- AUTO-GENERATED-TABLES-START -->
+
+## Volunteer
 
 | Name | Field | Location | Age Category | Deadline |  
 | ------- | ------- | ------- | ------- | ------- |  
@@ -37,7 +39,7 @@ Create your own opportunities ✨</sub>
 
 ---
 
-## Jobs / Internships / Fellowships  
+## Jobs / Internships / Fellowships
 
 | Name | Field | Location | Age Category | Deadline |  
 | ------- | ------- | ------- | ------- | ------- |  
@@ -50,17 +52,22 @@ Create your own opportunities ✨</sub>
 
 ---
 
-## Certificates  
+## Certificates
 
 | Name | Field |  
 | ------- | ------- |  
+| [AI Nation - Afaaq [AWS Upskilling Program]](https://www.ea.ae/ai-nation-afaaq-program) | Cloud / AI / CS |  
 | [AWS Cloud Practitioner Essentials](https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/) | Cloud Computing |  
 | [Harvard's CS50 Python](https://cs50.harvard.edu/python/) | Computer Science |  
 | [AI Safety Courses (+ Volunteer Projects)](https://www.aisafety.com/self-study) | AI Safety / Ethics / CS / Policy |  
+| [Free Microsoft Training for Students](https://learn.microsoft.com/en-us/training/student-hub/certifications) | Cloud / CS / AI |  
+| [Free Certified in Cybersecurity by ISC2](https://www.isc2.org/landing/1mcc) | Cybersecurity |  
+| [Free Cybersecurity Courses \| ECCouncil](https://www.eccouncil.org/cybersecurity-exchange/cyber-novice/free-cybersecurity-courses-beginners/) | Cybersecurity |  
+| [Introduction to Security Principles in Cloud Computing](https://www.skills.google/course_templates/1300?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=73599633) | Cybersecurity / Cloud Computing |  
 
 ---
 
-## Research  
+## Research
 
 | Name | Field | Location | Age Category | Deadline |  
 | ------- | ------- | ------- | ------- | ------- |  
@@ -71,7 +78,7 @@ Create your own opportunities ✨</sub>
 
 ---
 
-## Competitions  
+## Competitions
 
 | Name | Field | Location | Age Category | Deadline |  
 | ------- | ------- | ------- | ------- | ------- |  
@@ -81,13 +88,17 @@ Create your own opportunities ✨</sub>
 
 ---
 
-## Education Resources  
+## Education Resources
 
 - [Github Repo: AI Engineering Handbook](https://github.com/DataExpert-io/ai-engineer-handbook): Computer Science/AI  
+- [Microsoft: AI For Beginners](https://microsoft.github.io/AI-For-Beginners/): Computer Science/AI  
+- [Free $100 credits with Azure for Students](https://azure.microsoft.com/en-us/free/students): $100 worth free Microsoft Azure credits  
+- [GitHub Student Developer Pack](https://www.eccouncil.org/cybersecurity-exchange/cyber-novice/free-cybersecurity-courses-beginners/): collection of free services as part of github student developer pack  
 
 ---
 
-## People/Communities/Job Boards  
+## People/Communities/Job Boards
+
 - [Socia](https://www.instagram.com/socia.ae/): Opportunities in the Gulf  
 - [Harsehaj's Substack](https://harsehaj.substack.com/): blogs with 3 opportunities daily (US/global)  
 - [80,000 Hours Job Board](https://jobs.80000hours.org/?int_campaign=primary-navigation): jobs with impact  
@@ -95,8 +106,16 @@ Create your own opportunities ✨</sub>
 
 ---
 
+<!-- AUTO-GENERATED-TABLES-END -->
+
+---
+
 ### Notes
 
 - "Rolling" = No fixed deadline, apply anytime  
-- Always verify deadlines and eligibility requirements on official websites
+- Always verify deadlines and eligibility requirements on official websites  
 - If a link no longer works, the opportunity may have been closed
+
+### CONTRIBUTORS
+I'm incredibly grateful to our contributors who enriched this list with exciting opportunities!</br>
+- [Muhammad Hamad](https://www.linkedin.com/in/mohammadhamad/)
