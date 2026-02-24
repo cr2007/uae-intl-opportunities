@@ -2,11 +2,14 @@
 
 A comprehensive list of opportunities for students/professionals in UAE as well as global/international programs. Includes fellowships, volunteer programs, certificates and more! Most of these opportunities are free and/or global <3
 
-<sub>P.S Not all opportunities are publicly declared with application forms.</sub>
-<sub>If you're really interested or passionate about working with someone/or on some topic, all you need is an email! 
-Create your own opportunities ✨</sub>
+> [!NOTE]
+> P.S Not all opportunities are publicly declared with application forms.</br>
+> If you're really interested or passionate about working with someone/or on some topic, all you need is an email!
+> Create your own opportunities ✨
 
-<sub>**Note:❗Always verify if there are any fees to enroll/participate**</sub>
+> [!IMPORTANT]
+> Always verify if there are any fees to enroll/participate**</sub>
+
 
 ---
 
@@ -49,6 +52,7 @@ Create your own opportunities ✨</sub>
 | [42 Abu Dhabi Bootcamp](https://42abudhabi.ae/) | Computer Science | Abu Dhabi | NA | Rolling |  
 | [Gigs - Home from College](https://www.homefromcollege.com/gigs) | Marketing/Product/Others | Remote/Global | NA | Rolling |  
 | [Mentor Me Collective - Grow With Google](https://www.mentormecollective.org/grow-with-google) | CS / Data / IT / Cybersecurity / Project Mgt / UX | Remote/Global | NA | Rolling |  
+| [Cercli (YC23) is Hiring](https://careers.cercli.com/cercli) | SWE / Sales / Customer Service / Payroll Specialist | Dubai | NA | Rolling |  
 
 ---
 
