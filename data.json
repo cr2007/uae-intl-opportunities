@@ -226,6 +226,14 @@
         "location": "UAE/Virtual",
         "ageCategory": "NA",
         "deadline": "Rolling"
+      },
+      {
+        "name": "Build with K2 Think V2 - Monthly Challenge",
+        "url": "https://build.k2think.ai/",
+        "field": "CS / AI",
+        "location": "Global/UAE",
+        "ageCategory": "NA",
+        "deadline": "Rolling (First deadline - March 10)"
       }
     ]
   },
