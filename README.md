@@ -6,10 +6,11 @@ A comprehensive list of opportunities for students/professionals in UAE as well 
 > P.S Not all opportunities are publicly declared with application forms.</br>
 > If you're really interested or passionate about working with someone/or on some topic, all you need is an email!
 > Create your own opportunities ✨
-
+ 
 > [!IMPORTANT]
 > Always verify if there are any fees to enroll/participate**</sub>
 
+**📚 [View Closed Opportunities Archive →](CLOSED.md)**
 
 ---
 
@@ -119,6 +120,7 @@ A comprehensive list of opportunities for students/professionals in UAE as well 
 - "Rolling" = No fixed deadline, apply anytime  
 - Always verify deadlines and eligibility requirements on official websites  
 - If a link no longer works, the opportunity may have been closed
+- Check our [Closed Opportunities Archive](CLOSED.md) to see past programs that may run again
 
 ### CONTRIBUTORS
 I'm incredibly grateful to our contributors who enriched this list with exciting opportunities and/or improved the page!
