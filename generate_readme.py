@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 from typing import TypedDict
+from datetime import datetime
 
 class Opportunity(TypedDict, total=False):
     name:        str
@@ -36,22 +37,44 @@ class OpportunitiesSchema(TypedDict):
     educationResources: list[EducationResource]
     peopleCommunities:  list[PeopleCommunity]
 
+class ClosedOpportunity(TypedDict, total=False):
+    name:        str
+    url:         str
+    field:       str
+    location:    str
+    ageCategory: str
+    deadline:    str
+    closedDate:  str
+    category:    str
 
-def main():
+def main(): 
+    #load active opportunities
     with open('data.json', 'r', encoding='utf-8') as f:
         data: OpportunitiesSchema = json.load(f)
+    
+    #load closed opportunities (create if doesn't exist)
+    try:
+        with open('closed_opportunities.json', 'r', encoding='utf-8') as f:
+            closed_data = json.load(f)
+    except FileNotFoundError:
+        closed_data = []
+        with open('closed_opportunities.json', 'w', encoding='utf-8') as f:
+            json.dump(closed_data, f, indent=2)
 
+    #generate main README
     with open('README_template.md', 'r', encoding='utf-8') as f:
         template = f.read()
 
     tables_content = generate_tables_section(data)
-
     final_readme = insert_generated_content(template, tables_content)
 
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(final_readme)
+    
+    #generate CLOSED.md
+    generate_closed_opportunities_page(closed_data)
 
-    print("README.md generated successfully!")
+    print("README.md and CLOSED.md generated successfully!")
 
 def insert_generated_content(template, tables_content):
     start_marker = "<!-- AUTO-GENERATED-TABLES-START -->"
@@ -148,6 +171,64 @@ def generate_table(headers: list[str], items: list[Opportunity], fields: list[st
         table += "| " + " | ".join(row) + " |  \n"
 
     return table
+
+def generate_closed_opportunities_page(closed_opportunities):
+    """Generate a separate page for closed opportunities"""
+    
+    content = """# 🗄️ Closed Opportunities Archive
+ 
+This page contains opportunities that have closed or expired. We keep them here for reference and to help you discover similar opportunities that may reopen in the future.
+ 
+> [!TIP]
+> Many of these opportunities run annually! Bookmark this page and check back next year.
+ 
+**[← Back to Active Opportunities](README.md)**
+ 
+---
+ 
+"""
+    
+    if not closed_opportunities:
+        content += "_No closed opportunities yet._\n"
+    else:
+        # Group by category
+        by_category = {}
+        for opp in closed_opportunities:
+            category = opp.get('category', 'Other')
+            if category not in by_category:
+                by_category[category] = []
+            by_category[category].append(opp)
+        
+        # Sort by closed date (most recent first)
+        for category in by_category:
+            by_category[category].sort(
+                key=lambda x: x.get('closedDate', ''), 
+                reverse=True
+            )
+        
+        # Generate tables by category
+        for category in sorted(by_category.keys()):
+            opportunities = by_category[category]
+            content += f"## {category}\n\n"
+            
+            headers = ['Name', 'Field', 'Location', 'Deadline', 'Closed']
+            fields = ['name', 'field', 'location', 'deadline', 'closedDate']
+            
+            content += generate_table(headers, opportunities, fields)
+            content += "\n---\n\n"
+    
+    content += """
+### Notes
+ 
+- These opportunities have passed their deadline or are no longer accepting applications
+- Check if similar opportunities will be offered in the future
+- Many programs run annually - set a reminder to apply next year!
+ 
+**[← Back to Active Opportunities](README.md)**
+"""
+    
+    with open('CLOSED.md', 'w', encoding='utf-8') as f:
+        f.write(content)
 
 if __name__ == "__main__":
     main()

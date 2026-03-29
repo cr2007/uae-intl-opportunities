@@ -5,6 +5,7 @@ on:
     branches: [main] # Pushes only to main branch
     paths:
       - 'data.json'                           # Metadata file
+      - 'closed_opportunities.json'
       - 'generate_readme.py'                  # Update script
       - 'README_template.md'                  # Template README file
       - '.github/workflows/update-readme.yml' # GitHub Actions workflow
@@ -35,7 +36,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
       - name: Generate README
         run: python generate_readme.py
@@ -44,7 +45,7 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.md
+          git add README.md CLOSED.md
           if ! git diff --staged --quiet; then
             git commit -m "docs: Update README from data.json"
             git push
@@ -61,16 +62,41 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: main  # Ensure we get the latest commit from update-readme job
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Prepare Pages content
         run: |
-          mkdir site
-          cp README.md site/index.md
+          mkdir -p _site
+          cp README.md _site/index.md
+          cp CLOSED.md _site/closed.md
+          cp _config.yml _site/
 
-      - name: Upload to GitHub Pages
+          # Add front matter to index.md
+          echo "---" > _site/index_tmp.md
+          echo "layout: default" >> _site/index_tmp.md
+          echo "title: UAE International Opportunities" >> _site/index_tmp.md
+          echo "---" >> _site/index_tmp.md
+          echo "" >> _site/index_tmp.md
+          cat _site/index.md >> _site/index_tmp.md
+          mv _site/index_tmp.md _site/index.md
+          
+          # Add front matter to closed.md
+          echo "---" > _site/closed_tmp.md
+          echo "layout: default" >> _site/closed_tmp.md
+          echo "title: Closed Opportunities Archive" >> _site/closed_tmp.md
+          echo "---" >> _site/closed_tmp.md
+          echo "" >> _site/closed_tmp.md
+          cat _site/closed.md >> _site/closed_tmp.md
+          mv _site/closed_tmp.md _site/closed.md
+
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: _site
 
       - name: Deploy GitHub Pages site
         uses: actions/deploy-pages@v4
