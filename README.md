@@ -48,7 +48,6 @@ A comprehensive list of opportunities for students/professionals in UAE as well 
 | ------- | ------- | ------- | ------- | ------- |
 | [Hala Youth Ambassador](https://docs.google.com/forms/d/e/1FAIpQLScKcVoQECPIKDLMf0VYVi04jy1nHcOorWVW3pry6mvo9ykgKg/viewform) | Outreach / Events | UAE | University/Recent grad | N/A |  
 | [LunarTech Apprentice Program](https://www.lunartech.ai/our-careers) | Multiple Fields | Global | 18+ | N/A |  
-| [Brazen Academy - PR Internship](https://www.linkedin.com/posts/hibba-khan-7633b4184_brazenacademy-internship-brazenmena-activity-7427583455808540672-V0i2/) | Public Relations/Marketing | UAE | NA | NA |  
 | [Kode With Klossy](https://www.kodewithklossy.com/camp) | Computer Science | Remote/Onsite | 13-18 | TBD (Spring 2026) |  
 | [42 Abu Dhabi Bootcamp](https://42abudhabi.ae/) | Computer Science | Abu Dhabi | NA | Rolling |  
 | [Gigs - Home from College](https://www.homefromcollege.com/gigs) | Marketing/Product/Others | Remote/Global | NA | Rolling |  
@@ -77,9 +76,9 @@ A comprehensive list of opportunities for students/professionals in UAE as well 
 | Name | Field | Location | Age Category | Deadline |
 | ------- | ------- | ------- | ------- | ------- |
 | [ResearchGirl](https://www.researchgirl.org/independent-research) | STEM | Remote | High School & Undergraduate | NA (Runs May-Apr) |  
-| [Undergraduate Research & Innovation Competition - Abu Dhabi University](https://www.adu.ac.ae/uric) | Multiple Fields | Abu Dhabi, UAE | Undergraduate | 8 March |  
-| [MBZUAI Undergraduate Research Internship (UGRIP)](https://mbzuai.ac.ae/ugrip/) | CS / Computer Vision / ML / NLP / Robotics | Abu Dhabi, UAE | Undergraduate | 26 February |  
-| [NYUAD Summer Undergraduate Research Program](https://nyuad.nyu.edu/en/academics/undergraduate/visiting-students/visiting-undergraduate-research.html#tab-4-interdisciplinary-) | Humanities / Engineering / Science / Multiple | Abu Dhabi, UAE | Undergraduate | 27 February |  
+| [Undergraduate Research & Innovation Competition - Abu Dhabi University](https://www.adu.ac.ae/uric) | Multiple Fields | Abu Dhabi, UAE | Undergraduate | 8 March [Closed, but runs annually] |  
+| [MBZUAI Undergraduate Research Internship (UGRIP)](https://mbzuai.ac.ae/ugrip/) | CS / Computer Vision / ML / NLP / Robotics | Abu Dhabi, UAE | Undergraduate | 26 February [Closed, but runs annually] |  
+| [NYUAD Summer Undergraduate Research Program](https://nyuad.nyu.edu/en/academics/undergraduate/visiting-students/visiting-undergraduate-research.html#tab-4-interdisciplinary-) | Humanities / Engineering / Science / Multiple | Abu Dhabi, UAE | Undergraduate | 27 February [Closed, but runs annually] |  
 
 ---
 
@@ -87,7 +86,6 @@ A comprehensive list of opportunities for students/professionals in UAE as well 
 
 | Name | Field | Location | Age Category | Deadline |
 | ------- | ------- | ------- | ------- | ------- |
-| [EMIS Writing Contest 2026](https://forms.gle/z52KEcGMT1vhYyaL7) | Creative Writing | Global/Remote | 12-21 | 24 March |  
 | [FemTech Hackathon](https://schools.expocitydubai.com/en/femtech-hackathon-2026/#msdynmkt_trackingcontext=0544e260-0bab-4e44-83eb-fe2dec920100) | Science/Health/Innovation | Dubai, UAE | 16-18 | 6 March |  
 | [MBRSIC CleanTech Hackathon](https://www.mbrsic.ae/en/join-us/cleantech-hackathon-2026) | Sustainability/Energy/AI | UAE | All | 17 March |  
 | [LabLab.ai Hackathons](https://lablab.ai/) | Computer Science/AI/Business | UAE/Virtual | NA | Rolling |  
