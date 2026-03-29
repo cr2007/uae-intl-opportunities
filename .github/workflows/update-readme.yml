@@ -8,7 +8,10 @@ on:
       - 'closed_opportunities.json'
       - 'generate_readme.py'                  # Update script
       - 'README_template.md'                  # Template README file
+      - 'index_template.md'
       - '.github/workflows/update-readme.yml' # GitHub Actions workflow
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight UTC
   workflow_dispatch:  #Allow manual triggering
 
 permissions:
@@ -42,8 +45,8 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.md CLOSED.md
-          git diff --staged --quiet || git commit -m "docs: Update README from data.json"
+          git add README.md index.md CLOSED.md data.json closed_opportunities.json
+          git diff --staged --quiet || git commit -m "docs: Auto-update - move expired opportunities"
           git push || echo "No changes to push"
  
       - name: Setup Pages

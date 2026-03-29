@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import json
 from typing import TypedDict
-from datetime import datetime
+from datetime import datetime, timedelta
+import re
 
 class Opportunity(TypedDict, total=False):
     name:        str
@@ -54,29 +55,45 @@ def main():
     with open('data.json', 'r', encoding='utf-8') as f:
         data: OpportunitiesSchema = json.load(f)
 
-    # Load closed opportunities (create if doesn't exist)
+    # Load closed opportunities
     try:
         with open('closed_opportunities.json', 'r', encoding='utf-8') as f:
             closed_data = json.load(f)
     except FileNotFoundError:
         closed_data = []
+
+    # Auto-close expired opportunities
+    print("Checking for expired opportunities...")
+    moved = auto_close_expired_opportunities(data, closed_data)
+    if moved > 0:
+        print(f"Auto-closed {moved} expired opportunity/opportunities")
+        # Save updated data
+        with open('data.json', 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
         with open('closed_opportunities.json', 'w', encoding='utf-8') as f:
-            json.dump(closed_data, f, indent=2)
+            json.dump(closed_data, f, indent=2, ensure_ascii=False)
+    else:
+        print("No expired opportunities found")
 
-    # Generate main README
-    with open('README_template.md', 'r', encoding='utf-8') as f:
-        template = f.read()
-
+    # Generate content
     tables_content = generate_tables_section(data)
-    final_readme = insert_generated_content(template, tables_content)
-
+    
+    # Generate index.md (for GitHub Pages - with front matter)
+    with open('index_template.md', 'r', encoding='utf-8') as f:
+        index_template = f.read()
+    final_index = insert_generated_content(index_template, tables_content)
+    with open('index.md', 'w', encoding='utf-8') as f:
+        f.write(final_index)
+    
+    # Generate README.md (for GitHub repo - without front matter)
+    with open('README_template.md', 'r', encoding='utf-8') as f:
+        readme_template = f.read()
+    final_readme = insert_generated_content(readme_template, tables_content)
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(final_readme)
 
-    # Generate CLOSED.md
     generate_closed_opportunities_page(closed_data)
-
-    print("README.md and CLOSED.md generated successfully!")
+    print("index.md, README.md, and CLOSED.md generated successfully!")
 
 
 def insert_generated_content(template, tables_content):
@@ -99,6 +116,80 @@ def insert_generated_content(template, tables_content):
         + template[end_index:]
     )
 
+def parse_deadline(deadline_str):
+    """Parse deadline string and return date object"""
+    if not deadline_str or deadline_str.lower() in ['na', 'rolling', 'n/a', '']:
+        return None
+    
+    try:
+        # Handle formats like "6 March", "March 6", "17 March"
+        current_year = datetime.now().year
+        
+        # Try different date formats
+        for fmt in ['%d %B', '%B %d', '%d %b', '%b %d']:
+            try:
+                parsed = datetime.strptime(deadline_str.strip(), fmt)
+                # Add current year
+                deadline = parsed.replace(year=current_year)
+                
+                # If deadline is in the past and we're in Q1 next year, 
+                # it might have been from last year
+                if deadline < datetime.now() - timedelta(days=365):
+                    deadline = deadline.replace(year=current_year + 1)
+                
+                return deadline
+            except ValueError:
+                continue
+        
+        # Try full date format YYYY-MM-DD
+        return datetime.strptime(deadline_str, '%Y-%m-%d')
+    except:
+        return None
+    
+
+def auto_close_expired_opportunities(data, closed_data):
+    """Automatically move opportunities past their deadline to closed"""
+    today = datetime.now()
+    moved_count = 0
+    
+    # Check closingSoon
+    if 'closingSoon' in data:
+        to_remove = []
+        for i, opp in enumerate(data['closingSoon']):
+            deadline = parse_deadline(opp.get('deadline', ''))
+            if deadline and deadline < today - timedelta(days=1):
+                # Add to closed
+                opp['category'] = 'Closing Soon'
+                opp['closedDate'] = deadline.strftime('%Y-%m-%d')
+                closed_data.append(opp)
+                to_remove.append(i)
+                moved_count += 1
+                print(f"  ✓ Auto-closed: {opp['name']} (deadline: {opp.get('deadline')})")
+        
+        # Remove in reverse order to maintain indices
+        for i in reversed(to_remove):
+            data['closingSoon'].pop(i)
+    
+    # Check each category
+    if 'categories' in data:
+        for category, opportunities in data['categories'].items():
+            to_remove = []
+            for i, opp in enumerate(opportunities):
+                deadline = parse_deadline(opp.get('deadline', ''))
+                if deadline and deadline < today - timedelta(days=1):
+                    # Add to closed
+                    opp['category'] = category
+                    opp['closedDate'] = deadline.strftime('%Y-%m-%d')
+                    closed_data.append(opp)
+                    to_remove.append(i)
+                    moved_count += 1
+                    print(f"  ✓ Auto-closed: {opp['name']} from {category} (deadline: {opp.get('deadline')})")
+            
+            # Remove in reverse order
+            for i in reversed(to_remove):
+                opportunities.pop(i)
+    
+    return moved_count
 
 def generate_tables_section(data):
     content = ""
