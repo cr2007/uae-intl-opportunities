@@ -29,7 +29,9 @@ This page contains opportunities that have closed or expired. We keep them here 
 | Name | Field | Location | Deadline | Closed |
 | ------- | ------- | ------- | ------- | ------- |
 | [MBRSIC CleanTech Hackathon](https://www.mbrsic.ae/en/join-us/cleantech-hackathon-2026) | Sustainability/Energy/AI | UAE | 17 March | 2026-03-17 |  
+| [MBRSIC CleanTech Hackathon](https://www.mbrsic.ae/en/join-us/cleantech-hackathon-2026) | Sustainability/Energy/AI | UAE | 17 March | 2026-03-17 |  
 | [FemTech Hackathon](https://schools.expocitydubai.com/en/femtech-hackathon-2026/) | Science/Health/Innovation | Dubai, UAE | 6 March | 2026-03-06 |  
+| [FemTech Hackathon](https://schools.expocitydubai.com/en/femtech-hackathon-2026/#msdynmkt_trackingcontext=0544e260-0bab-4e44-83eb-fe2dec920100) | Science/Health/Innovation | Dubai, UAE | 6 March | 2026-03-06 |  
 
 ---
 
