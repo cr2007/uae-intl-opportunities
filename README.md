@@ -107,6 +107,7 @@ A comprehensive list of opportunities for students/professionals in UAE as well 
 
 ## People/Communities/Job Boards
 
+- [UAE Research Map](https://uaeresearchmap.ae/challenge): A map of competitions revolving around innovation in the UAE  
 - [Socia](https://www.instagram.com/socia.ae/): Opportunities in the Gulf  
 - [Harsehaj's Substack](https://harsehaj.substack.com/): blogs with 3 opportunities daily (US/global)  
 - [80,000 Hours Job Board](https://jobs.80000hours.org/?int_campaign=primary-navigation): jobs with impact  
