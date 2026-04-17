@@ -2,7 +2,7 @@ name: Update README and Deploy to Pages
 
 on:
   push:
-    branches: [main] # Pushes only to main branch
+    branches: [main, workflow-version-bump] # Pushes only to main branch
     paths:
       - 'data.json'                           # Metadata file
       - 'closed_opportunities.json'
